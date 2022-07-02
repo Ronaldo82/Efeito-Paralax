@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax</title>
+    <style type="text/css">
+
+        .conteudo{
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+        }
+
+        #para{
+            font-size: 20px ;
+            color: red;
+
+        }
+
+        body, html{
+            margin: 0;
+            font: 16px "Lato", sans-serif;
+            color: #777;
+            height: 100%;/*este e o truque do paralax*/
+        }
+
+        /*configuraçoes do efeito paralax*/
+        .caixa1, .caixa2, .caixa3{
+            position: relative;
+            height: 100%;
+            opacity: 0.6;/*imagem mais ou menos opaca*/
+            background-repeat: no-repeat;/*esta tag faz com que a imagem nao repita*/
+            background-size: cover;/*esta tag faz com que uma imagem ocupe todo o espaço da div*/
+            background-position: center;/*centraliza a imagem*/
+            background-attachment: fixed;/*este e o truque para atingir o paralax*/
+        }
+
+        .caixa1{
+            background-image: url(imagem/imagem1.jpg);
+        }
+
+        .caixa2{
+            background-image: url(imagem/imagem2.jpg);
+        }
+
+        .caixa3{
+            background-image: url(imagem/imagem3.jpg);
+        }
+
+        .conteudo-titulo {
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            width: 100%;    
+            text-align: center;
+        }
+
+        .conteudo-titulo span.titulo{
+            color: #fff;
+            background-color: #111;
+            font-size: 25px;
+            letter-spacing: 5px;/*espaçamento entre as letras*/
+             padding: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">Passeio de balões</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Paralx</h3>
+        <p id="para"> <strong>De forma sucinta, o efeito paralax da a quem vê, a impressão de que uma imagem está cobrindo a outra.</p></strong> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+            optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                    optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                        optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                            optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+    </div>
+
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">Pegando a estrada</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>conteudo 4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+            optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+    </div>
+
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">Por do sol</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>conteudo 6</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+            optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero maiores doloribus id explicabo, iste harum
+                optio dolore aut alias fuga voluptates praesentium minus ex nesciunt velit est beatae fugiat.</p>
+    </div>
+</body>
+</html>
